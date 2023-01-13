@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #1B1464 !important;
+    font-family: 'Jost', sans-serif;
+}
+
+.cardFlat {
+    background-color: #1289A7;
+    border-radius: 15px;
+    padding: 5vh;
+    color: #383276;
+}
+
+.centralizer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.bars-form {
+    border-radius: 5px;
+    background-color: #1B1464;
+    border-color: transparent;
+    padding: .5vh;
+    width: 100%;
+    transition: .5s;
+    color: #ED4C67 !important;
+}
+
+.bars-form:focus {
+    border-color: #ED4C67 !important;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.btn {
+    background-color: #1B1464 !important;
+    color: #ED4C67 !important;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: #6F1E51 !important;
+    color: #ED4C67 !important;
+}
+
+.ocup {
+    width: 100%;
+}
