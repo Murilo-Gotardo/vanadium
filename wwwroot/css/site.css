@@ -1,18 +1,43 @@
+* {
+    --primary-color: #2C3E50;
+    --secondary-color: #34495E;
+    --tertiary-color: #16A085;
+}
+
 html {
     height: 100%;
 }
 
 body {
     height: 100%;
-    background-color: #1B1464 !important;
+    background-color: var(--primary-color) !important;
     font-family: 'Jost', sans-serif;
 }
 
+.navLogin a {
+    color: var(--primary-color);
+    border-radius: 4px;
+    transition: .5s;
+    padding: 5px;
+}
+
+.navLogin a:hover {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+.fundoLogin {
+    background-image: url(/img/stacked-peaks-haikei.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(.5vh);
+}
+
 .cardFlat {
-    background-color: #1289A7;
+    background-color: var(--tertiary-color);
     border-radius: 15px;
-    padding: 5vh;
-    color: #383276;
+    padding: 4vh;
+    color: var(--primary-color);
 }
 
 .centralizer {
@@ -25,33 +50,89 @@ body {
 
 .bars-form {
     border-radius: 5px;
-    background-color: #1B1464;
+    background-color: var(--primary-color);
     border-color: transparent;
     padding: .5vh;
     width: 100%;
     transition: .5s;
-    color: #ED4C67 !important;
 }
 
 .bars-form:focus {
-    border-color: #ED4C67 !important;
-}
+    border-color: var(--primary-color) !important;
+}   
 
 input:focus {
     outline: 0;
 }
 
+input::placeholder {
+    color: var(--tertiary-color);
+}
+
 .btn {
-    background-color: #1B1464 !important;
-    color: #ED4C67 !important;
+    background-color: var(--primary-color) !important;
+    color: var(--tertiary-color) !important;
     transition: .5s;
 }
 
 .btn:hover {
-    background-color: #6F1E51 !important;
-    color: #ED4C67 !important;
+    background-color: var(--secondary-color) !important;
 }
 
 .ocup {
     width: 100%;
+}
+
+form a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: .5s;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: var(--tertiary-color) !important;
+}
+
+img {
+    border-radius: 15px;
+}
+
+#gifLivros {
+    width: 100px;
+}
+
+.bem-vindo {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 4vh;
+}
+
+.bem-vindo h1 {
+    width: 30vh;
+}
+
+.escreve::after {
+    content: '|';
+    color: #2ECC71;
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.escreve::after {
+    animation: blink .8s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
