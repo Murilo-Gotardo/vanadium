@@ -19,3 +19,16 @@ typeWriter(titulo);
 const titulo2 = document.querySelector('.escreve2');
 
 typeWriter(titulo2);
+
+//
+
+function mostraImagem(img) {
+    if (img.files && img.files[0]) {
+        var reader = new FileReader();
+        var imagem = document.getElementById("imgUsuario");
+        reader.onload = function (e) {
+            imagem.src = e.target.result;
+        };
+        reader.readAsDataURL(img.files[0]);
+    }
+}

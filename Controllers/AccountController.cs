@@ -9,5 +9,10 @@ namespace vanadium.Controllers
 		{
 			return View();
 		}
-	}
+
+        public IActionResult Register()
+        {
+            return View();
+        }
+    }
 }

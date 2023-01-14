@@ -103,6 +103,7 @@ img {
 
 #gifLivros {
     width: 100px;
+    border-radius: 10px;
 }
 
 .bem-vindo {
@@ -135,4 +136,22 @@ img {
     100% {
         opacity: 0;
     }
+}
+
+.iconeUsuario img{
+    width: 20vh;
+    height: 20vh;
+    object-fit: cover;
+}
+
+.iconeUsuario {
+    border-radius: 15px;
+}
+
+input::-webkit-file-upload-button {
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
 }
