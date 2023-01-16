@@ -1,0 +1,12 @@
+F:\repos\Repository\bin\Debug\net7.0\Repository.deps.json
+F:\repos\Repository\bin\Debug\net7.0\Repository.dll
+F:\repos\Repository\bin\Debug\net7.0\Repository.pdb
+F:\repos\Repository\obj\Debug\net7.0\Repository.csproj.AssemblyReference.cache
+F:\repos\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+F:\repos\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
+F:\repos\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
+F:\repos\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
+F:\repos\Repository\obj\Debug\net7.0\Repository.dll
+F:\repos\Repository\obj\Debug\net7.0\refint\Repository.dll
+F:\repos\Repository\obj\Debug\net7.0\Repository.pdb
+F:\repos\Repository\obj\Debug\net7.0\ref\Repository.dll
