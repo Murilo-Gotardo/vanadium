@@ -4,15 +4,19 @@ using vanadium.Models;
 
 namespace vanadium.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
 
-        public DbSet<UserViewModel> Livros { get; set; }
+        public DbSet<UserViewModel> User { get; set; } = default!;
 
-        public DbSet<vanadium.Models.BooksUserViewModel> BooksUserViewModel { get; set; } = default!;
+        public DbSet<BooksViewModel> Books { get; set; } = default!;
+
+        public DbSet<TagsViewModel> Tags { get; set; } = default!;
+
+        public DbSet<ErrorViewModel> Errors { get; set; } = default!;
     }
 }

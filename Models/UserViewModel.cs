@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace vanadium.Models
 {
 
-	[Table("Livros")]
+	[Table("User")]
 	public class UserViewModel
 	{
 		public int Id { get; set; }
@@ -15,5 +15,8 @@ namespace vanadium.Models
 
 		public string Password { get; set; }
 
+		public int BooksId { get; set; }
+		public BooksViewModel Books { get; set; }
+ 
 	}
 }

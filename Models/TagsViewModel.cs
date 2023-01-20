@@ -1,6 +1,9 @@
-﻿namespace vanadium.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace vanadium.Models
 {
-	public class TagsViewModel
+    [Table("Tags")]
+    public class TagsViewModel
 	{
 		public int Id { get; set; }
 		public string Type { get; set; }

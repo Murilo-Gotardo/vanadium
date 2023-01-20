@@ -2,17 +2,25 @@
 using vanadium.Models;
 using FluentValidation.Results;
 using vanadium.Validator;
+using vanadium.Data;
 
 namespace vanadium.Controllers
 {
 	public class AccountController : Controller
 	{
 
-		public IActionResult Login()
+        private readonly ApplicationDbContext _context;
+
+        public AccountController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public IActionResult Login()
 		{
             UserViewModel user = new UserViewModel();
 
-            return View("Login", user);
+            return View(user);
         }
 
         [HttpPost]
@@ -29,7 +37,7 @@ namespace vanadium.Controllers
                     user.Email = ("Property " + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage);
                 }
 
-                return View("Login", user);
+                return View(user);
             }
             else
             {
