@@ -1,10 +1,6 @@
 <h1>Vanadium</h1>
 
-<div align='center'>
 
-
-
-</div>
 
 > Status do Projeto: :warning: (em desenvolvimento)
 
@@ -28,8 +24,14 @@ Aplicação web para gerenciar livros e leituras
 
 ## Imagens do projeto
 
+<div align='center'>
+
 <img src="wwwroot\img\Captura de tela_20230114_234325.png" width="700px"/>
 <img src="wwwroot\img\Captura de tela_20230120_172644.png" width="700px"/>
+
+</div>
+
+
 
 ## Funcionalidades
 
