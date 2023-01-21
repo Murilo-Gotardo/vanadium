@@ -26,6 +26,11 @@ Aplicação web para gerenciar livros e leituras
 
 </p>
 
+## Imagens do projeto
+
+<img src="wwwroot\img\Captura de tela_20230114_234325.png" width="700px"/>
+<img src="wwwroot\img\Captura de tela_20230120_172644.png" width="700px"/>
+
 ## Funcionalidades
 
 :heavy_check_mark: Gerenciar livros
